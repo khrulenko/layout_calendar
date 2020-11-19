@@ -34,15 +34,6 @@
 }
 
 @for $i from 28 through 31 {
-  .calendar :nth-child(#{$i})::before {
-    content: "#{$i}";
-    justify-content: center;
-    @include main-font;
-    line-height: $date-width;
-  }
-}
-
-@for $i from 28 through 31 {
   .calendar-#{$i} :nth-child(-n + #{$i}) {
     display: block;
   }
