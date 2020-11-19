@@ -1,0 +1,9 @@
+@mixin main-font {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+}
+
+@mixin day-block-margin {
+  margin-left: 1px;
+  margin-top: 1px;
+}
