@@ -39,9 +39,9 @@
   }
 }
 
-@each $day, $size in $daysOfWeek {
+@each $dayNumber, $day in $daysOfWeek {
   .calendar-#{$day} :first-child {
-    margin-left: $size;
+    margin-left: #{100px * ($dayNumber - 1) + $dayNumber};
   }
 }
 
